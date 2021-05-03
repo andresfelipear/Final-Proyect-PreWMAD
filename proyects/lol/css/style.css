@@ -1,0 +1,334 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	background-image: url("../images/try2.png");
+	background-repeat: repeat;
+	margin: 0;
+}
+
+.menu{
+	background-color: #111111;
+	color: white;
+	width: 100%;
+	height: 12%;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.section1, .section2{
+	padding: 0px 25px;
+}
+
+.menu img{
+	width: 40px;
+}
+
+.sign {
+	text-align: right;
+}
+
+.section1{
+	width: 50%;
+}
+
+.section2{
+	width: 50%;
+	text-align: right;
+}
+
+.section2 a{
+	text-decoration: none;
+	color: #F9F9F9;
+	font-weight: bold;
+}
+.main{
+	width: 100%;
+	height: 110%;
+}
+
+.sectionVideo{
+	width: 100%;
+}
+.video1{
+	width: 100%;
+	object-fit:cover;
+	object-position:center top;
+	overflow: hidden;
+	height: 500px;
+}
+
+.mainVideo{
+	width: 90%;
+	border: 1px solid lightgrey;
+	height: 100px;
+	position: absolute;
+	top:20%;
+	left: 5%;
+	height: 500px;
+}
+
+.titleLol{
+	position: absolute;
+	top:30%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.titleLol img{
+	width: 40%;
+}
+
+.play{
+	border: 1px solid white;
+	width: 195px;
+	height: 56px;
+	position: absolute;
+	top: 550px;
+	left:calc((100% - 195px) / 2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px 00px;
+}
+
+.play button{
+	color: #551A8B;
+	width: 190px;
+	height: 51px;
+	background-color: rgb(11, 198, 227);
+	font-weight: bold;
+	font-size: 0.8125rem;
+	letter-spacing: 0.15em;
+	font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+	cursor: pointer;
+
+}
+
+.news{
+	width: 100%;
+	height: 148px;
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+#new3{
+	margin-right: 0;
+}
+.new1{
+	width: 30%;
+	border: 2px solid lightgrey;
+	border-radius: 0px 25px 0px 25px;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 140px;
+	margin-right: 20px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.new1 img{
+	width: 126px;
+	height: 126px;
+	object-fit:cover;
+	object-position:center top;
+	margin: 5px 5px 5px 5px;
+	float: left;
+}
+
+.text{
+	font-size: 14px;
+	width: 45%;
+	overflow: hidden;
+	height: 120px;
+	padding: 5px 0px;
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+}
+.text h1{
+	font-size: 18px;
+	word-spacing: 2px;
+	letter-spacing: 0.03em;
+	margin: 12px 0px;
+}
+
+.text .p1{
+	color: rgb(180,180,180);
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.text p{
+	font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+	margin: 12px 0px;
+	overflow: hidden;
+}
+
+footer{
+	height: 77.2px;
+	background-color: rgb(6, 28, 37);
+    color: rgb(209, 218, 222);
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+
+}
+.foot{
+	padding: 20px 60px;
+	height: 37.2px;
+	display: flex;
+	align-items: center;
+
+}
+
+.foot h1{
+	font-size: 16px;
+	font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: "Beaufort for LOL", serif;
+    width: 30%;
+}
+
+.foot p{
+	text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    width: 40%;
+}
+
+.apps{
+	width: 30%;
+	justify-content: flex-end;
+	display: flex;
+	height: 37.2px;
+}
+.imgGoogle{
+	height: 60px;
+	position: relative;
+	bottom: 10px;
+}
+
+.apps a{
+	height: 32.2px;
+}
+
+
+@media screen and (max-width: 380px){
+
+
+	.menu{
+		height: 10%;
+	}
+	.main{
+		height: auto;
+	}
+
+	.mainVideo{
+		height: auto;
+		top:15%;
+	}
+
+	.play{
+		top:30%;
+		width: auto;
+		height: auto;
+		left: calc((100% - 120px) / 2);
+		border-radius: 10px 00px;
+	}
+
+	.play button{
+		width: auto;
+		height: auto;
+		font-size: 0.8125rem;
+    	letter-spacing: 0.1em;
+	}
+
+	.titleLol{
+		position: absolute;
+		top:20%;
+	}
+
+	.news{
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		display: block;
+		justify-content: center;
+	}
+
+	.new1{
+		width: 95%;
+		margin:0 0 20px 0px;
+		text-align: center;
+	}
+
+	.new1 h1{
+		margin: 0;
+		width: 100%;
+	}
+
+	.new1 p{
+		margin: 0;
+		width: 100%;
+	}
+
+	.p1 {
+		margin:0;
+		width: 100%;
+	}
+
+
+	.text{
+		text-align: justify;
+		display: grid;
+		align-items: center;
+
+	}
+
+	.video1{
+		height: auto;
+	}
+
+	footer{
+	height: auto;
+	background-color: rgb(6, 28, 37);
+    color: rgb(209, 218, 222);
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+
+	}
+
+	.foot{
+		padding: 20px 60px;
+		display: block;
+		height: auto;
+		align-items: center;
+		text-align: center;
+		vertical-align: middle;
+		padding: 10px 10px;
+	}
+
+	.foot h1{
+		width: auto;
+		margin: 15px 0;
+	}
+
+	.foot p{
+		width: auto;
+		margin: 15px 0;
+	}
+
+	.apps{
+		width: auto;
+		text-align: center;
+		justify-content: center;
+		margin: 15px 0;
+	}
+
+}

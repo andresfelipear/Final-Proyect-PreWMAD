@@ -1,0 +1,293 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	background-image: url("../images/background_riot.jpg");
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.menu{
+	background-color: #111111;
+	color: white;
+	width: 100%;
+	height: 12%;
+	display: flex;
+	align-items: center;
+	position: sticky;
+ 	top: 0;
+  	z-index: 1;
+}
+
+.section1, .section2{
+	padding: 0px 25px;
+}
+
+.menu img{
+	width: 40px;
+}
+
+.sign {
+	text-align: right;
+}
+
+.section1{
+	width: 50%;
+}
+
+.section2{
+	width: 50%;
+	text-align: right;
+}
+
+.section2 a{
+	text-decoration: none;
+	color: #F9F9F9;
+	font-weight: bold;
+}
+.main2{
+	width: 100%;
+	height: 80%;
+	margin: 70px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.form{
+	width: 300px;
+	background-color: white;
+	padding: 80px 50px;
+	text-align: center;
+}
+
+.form input{
+	border: 2px solid rgba(126,126,126);
+    border-radius: 4px;
+    background: rgba(126,126,126,0.1);
+	border:none;
+	border-radius: 10px;
+	padding: 0px 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+.form .inputText{
+	width: 80%;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.checkbox{
+	margin-top: 10px;
+	text-align: left;
+	margin-left: 21px;
+	height: 22px;
+	display: flex;
+	align-items: center;
+}
+
+.spanStay{
+	height: 22px;
+	display: flex;
+	align-items: center;
+	font-size: 11px;
+	font-family: sans-serif;
+	font-style: italic;
+}
+.icheckbox {
+	background: rgba(126,126,126);
+	height: 15px;
+	width: 15px;
+	margin: 0px 5px 0 0;
+
+}
+
+.submit{
+	margin: 10px 0px;
+	background-color: white;
+	border-radius: 15px;
+	border: 2px solid rgba(220,220,220);
+	width: 60px;
+	height: 60px;
+	background-image: url(../images/launch_form.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.recovery{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.recovery a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	font-size: 11px;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin: 5px 0;
+	color: #666666;
+}
+
+.form h1{
+	margin-bottom: 50px;
+	font-family: sans-serif;
+}
+
+.social{
+	width: 100%;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+.social button{
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	border: 2px solid rgba(0,0,0,0.05);
+	border-radius: 4px;
+	color: transparent;
+	margin: 1px 6px;
+	width: 78px;
+	cursor: pointer;
+
+}
+.bFacebook{
+	background-color: #1877f2;
+	background-image: url(../images/facebook_icon.svg);
+	
+}
+
+.bGoogle{
+	background-color: white;
+	background-image: url(../images/google_icon.svg);
+}
+
+.bApple{
+	background-color: black;
+	background-image: url(../images/apple_icon.svg);
+}
+footer{
+	height: 77.2px;
+	background-color: rgb(6, 28, 37);
+    color: rgb(209, 218, 222);
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+
+}
+.foot{
+	padding: 20px 60px;
+	height: 37.2px;
+	display: flex;
+	align-items: center;
+
+}
+
+.foot h1{
+	font-size: 16px;
+	font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: "Beaufort for LOL", serif;
+    width: 30%;
+}
+
+.foot p{
+	text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    width: 40%;
+}
+
+.apps{
+	width: 30%;
+	justify-content: flex-end;
+	display: flex;
+	height: 37.2px;
+}
+.imgGoogle{
+	height: 60px;
+	position: relative;
+	bottom: 10px;
+}
+
+.apps a{
+	height: 32.2px;
+}
+
+
+@media screen and (max-width: 380px){
+
+	.sticky + .main2 {
+	  padding-top: 80px;
+	}
+
+	.menu{
+		height: 10%;
+	}
+	.main2{
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.form{
+		width: 250px;
+		background-color: white;
+		padding: 50px 50px;
+		text-align: center;
+	}
+
+
+	footer{
+	height: auto;
+	background-color: rgb(6, 28, 37);
+    color: rgb(209, 218, 222);
+    font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+
+	}
+
+	.foot{
+		padding: 20px 60px;
+		display: block;
+		height: auto;
+		align-items: center;
+		text-align: center;
+		vertical-align: middle;
+		padding: 10px 10px;
+	}
+
+	.foot h1{
+		width: auto;
+		margin: 15px 0;
+	}
+
+	.foot p{
+		width: auto;
+		margin: 15px 0;
+	}
+
+	.apps{
+		width: auto;
+		text-align: center;
+		justify-content: center;
+		margin: 15px 0;
+	}
+
+	.sticky + .main {
+		padding-top: 75px;
+	}
+
+}

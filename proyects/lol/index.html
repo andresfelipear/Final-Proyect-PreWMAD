@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>League of Legends</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+		<nav class="menu" id="navbar">
+			<div class="section1">
+				<a href="index.html">
+					<img src="images/logo.png">
+				</a>				
+			</div>
+			<div class="section2">
+				<a class="sign" href="signin.html">SIGN IN</a>				
+			</div>
+		</nav>
+		<div class="main">
+			<div class="sectionVideo">
+				<video class="video1" preload="metadata" muted loop autoplay>
+					<source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-blurred-7572101a2ce5e003b66483b7fe5c5d36.webm" type="video/webm">
+					<source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-blurred-89a1d97affb8756b6763d75dcab20bb6.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="mainVideo">
+				<video class="video1" preload="metadata" muted loop autoplay>
+					<source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" type="video/webm">
+					<source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/en-us/production/en-us/static/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="titleLol">
+				<img src="images/lol.png">
+			</div>
+			<div class="play">
+				<button>PLAY FOR FREE</button>
+			</div>
+
+			<div class="news">
+				<div class="new1">
+					<img src="images/img1.jpg">
+					<div class="text">
+						<p class="p1">GAME UPDATES</p>
+						<h1>Gwen Champion Spotlight</h1>
+						<p>Craft a life worth living.</p>
+					</div>
+				</div>
+
+				<div class="new1">
+					<img src="images/img2.jpg">
+					<div class="text">
+						<p class="p1">MEDIA</p>
+						<h1>Gwen Champion Theme</h1>
+						<p>Listen to the official theme for Gwen, The Hallowed Seamstress.</p>
+					</div>
+				</div>
+
+				<div class="new1" id="new3">
+					<img src="images/img3.jpg">
+					<div class="text">
+						<p class="p1">DEV</p>
+						<h1>Quick Gameplay Thoughts 4/16</h1>
+						<p>How we choose lane champs for</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="foot">
+				<h1>TAKE LEAGUE WITH YOU</h1>
+				<p>Download the League app to stay connected to friends and the latest game and esports news.</p>
+				<div class="apps">
+					<a href="https://apps.apple.com/us/app/league-of-legends-friends/id1077150310" target="_blank"><img src="images/app1.svg" ></a>
+					<a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&hl=en" target="_blank"><img class="imgGoogle" src="images/app2.svg"></a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+</body>
+</html>
